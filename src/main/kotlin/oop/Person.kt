@@ -1,13 +1,6 @@
 package oop
 
-class Person(name: String,age: Int) {
-    val name: String
-    val age: Int
-
-    init {
-        this.name = name
-        this.age = age
-    }
+class Person(val name: String,var age: Int) {
 
     fun speak() {
         println("Hello")
