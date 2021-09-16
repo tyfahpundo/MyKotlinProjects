@@ -1,8 +1,8 @@
 package oop
 
 //Don't Repeat Yourself
-class Stack<E>(vararg val items: E){
-    val elements = items.toMutableList()
+class Stack<E>(private vararg val items: E){
+    private val elements = items.toMutableList()
 
     fun push(element: E){
         elements.add(element)
@@ -13,7 +13,7 @@ class Stack<E>(vararg val items: E){
         }
         return null
     }
-    fun isEmpty(): Boolean{
+    private fun isEmpty(): Boolean{
         return elements.isEmpty()
     }
 }
