@@ -8,4 +8,8 @@ fun main() {
     println(namesToAges.keys)
     println(namesToAges.values)
     println(namesToAges.entries)
+
+    namesToAges.entries.forEach{
+        println("${it.key} is ${it.value} years old.")
+    }
 }
